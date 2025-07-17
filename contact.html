@@ -181,126 +181,7 @@
             width: 100%;
         }
 
-        /* Hero Section Styles */
-        .hero {
-            height: 100vh;
-            background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            margin-top: 82px;
-        }
 
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 0 1rem;
-            animation: fadeIn 1.5s ease;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            font-family: 'Poppins', sans-serif;
-            max-width: 800px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            animation: slideUp 1s ease;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2.5rem;
-            max-width: 600px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-            animation: slideUp 1s ease 0.2s forwards;
-            opacity: 0;
-        }
-
-        @keyframes slideUp {
-            from { 
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to { 
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            animation: slideUp 1s ease 0.4s forwards;
-            opacity: 0;
-        }
-
-        .btn-primary, .btn-secondary, .btn-tertiary {
-            padding: 0.9rem 1.8rem;
-            border-radius: 6px;
-            font-weight: bold;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            min-width: 160px;
-            text-align: center;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-primary {
-            background-color: #F97316;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background-color: #e06a14;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-
-        .btn-secondary:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .btn-tertiary {
-            background-color: #10B981;
-            color: white;
-        }
-
-        .btn-tertiary:hover {
-            background-color: #0D9F6E;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
 
         /* Content Padding */
         .content {
@@ -431,254 +312,12 @@
                 font-size: 4rem;
             }
         }
-      /* Responsive Design for About Section */
-        /* Base Styles */
-.about-section {
-  padding: 4rem 1.5rem;
-  background: #f8fafc;
-  font-family: 'Poppins', sans-serif;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-h2, h3 {
-  text-align: center;
-  color: #1e3a8a;
-  margin-bottom: 1.5rem;
-}
-
-.highlight {
-  color: #f97316;
-}
-
-.icon {
-  color: #f97316;
-  margin-right: 8px;
-}
-
-p {
-  color: #475569;
-  line-height: 1.6;
-}
-
-/* Intro Sections */
-.story-section,
-.core-section,
-.sdgs,
-.approach,
-.board-section {
-  margin-bottom: 2.5rem;
-}
-
-.story-section p,
-.sdgs p {
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-  font-size: 1.05rem;
-}
-
-/* Mission & Vision */
-.mission-vision {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-@media (min-width: 768px) {
-  .mission-vision {
-    flex-direction: row;
-  }
-}
-
-.mission, .vision {
-  flex: 1;
-  background: #ffffff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-.mission h3, .vision h3 {
-  color: #f97316;
-}
-
-/* Core Values and Strategic Approach */
-.core-values, .approach ul, .board-list {
-  list-style: none;
-  padding: 0;
-  margin: 1rem auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  max-width: 800px;
-}
-
-@media (min-width: 600px) {
-  .core-values, .approach ul, .board-list {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.core-values li, .approach li, .board-list li {
-  padding-left: 1.5rem;
-  position: relative;
-  color: #475569;
-  font-size: 1.05rem;
-}
-
-.core-values li::before, .approach li::before, .board-list li::before {
-  content: "✔";
-  color: #f97316;
-  position: absolute;
-  left: 0;
-  font-weight: bold;
-}
-
-/* Team Section */
-.team-section {
-  margin-top: 3rem;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-@media (min-width: 768px) {
-  .team-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.team-member {
-  background: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-  transform: translateY(-5px);
-}
-
-.photo-placeholder {
-  background: url('https://via.placeholder.com/300x200') no-repeat center center;
-  background-size: cover;
-  height: 200px;
-  border-radius: 8px 8px 0 0;
-}
-
-.member-info {
-  padding: 1.2rem;
-  text-align: center;
-}
-
-.member-info h4 {
-  color: #1e3a8a;
-  font-weight: 600;
-  margin-bottom: 0.2rem;
-}
-
-.member-info p {
-  color: #64748b;
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
-}
-
-blockquote {
-  font-style: italic;
-  color: #475569;
-  background: #f1f5f9;
-  padding: 0.75rem 1rem;
-  border-left: 4px solid #f97316;
-  border-radius: 5px;
-  margin-top: 0.75rem;
-  font-size: 0.95rem;
-}
-
-/* Animations */
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1s ease-out forwards;
-}
-
-.fade-in-delay {
-  opacity: 0;
-  animation: fadeIn 1s ease-out forwards;
-  animation-delay: 0.3s;
-}
-
-.slide-up {
-  transform: translateY(20px);
-  opacity: 0;
-  animation: slideUp 1s ease forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Mobile Text Alignment */
-@media (max-width: 600px) {
-  .member-info, .story-section p, .sdgs p, blockquote {
-    text-align: left;
-  }
-}
-        /* Footer Styles */
-        footer {
-            background-color: #1E3A8A;
-            color: white;
-            padding: 2rem 1.5rem;
-            text-align: center;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: #F97316;
-        }
-        
     </style>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Static Header -->
@@ -707,122 +346,178 @@ blockquote {
         </nav>
     </header>
 <br>
-<!-- About Us Section -->
-<section class="about-section">
-  <div class="container">
-    <h2 class="fade-in">About <span class="highlight">Hope Rekindled Initiative</span></h2>
-
-    <!-- Our Story -->
-    <div class="story-section fade-in-delay">
-      <h3><i class="fas fa-book-reader icon"></i> Our Story</h3>
-      <p>
-        <strong>Hope Rekindled Initiative (HRI)</strong> is a youth-led nonprofit founded in 2022 to tackle urgent challenges facing young people across Kenya. From <strong>mental health</strong>, <strong>SRHR</strong>, and <strong>menstrual hygiene</strong> to <strong>climate change</strong> and <strong>employment skills</strong>, we empower youth to become leaders of change. We believe in doing what we can, with what we have, where we are—rekindling hope every day.
+<!-- Contact Section -->
+<section class="py-16 px-4 bg-gray-50" id="contact">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-indigo-900 mb-2">Contact Hope Rekindled</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Reach out to collaborate, volunteer, or learn more about our youth empowerment programs.
       </p>
     </div>
 
-    <!-- Mission & Vision -->
-    <div class="mission-vision slide-up">
-      <div class="mission">
-        <h3><i class="fas fa-bullseye icon"></i> Our Mission</h3>
-        <p>
-          To build the capacity of young people through civic engagement, health education, climate resilience, leadership development, and skills training for improved livelihoods and community well-being.
-        </p>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Contact Form -->
+      <div class="bg-white p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold text-indigo-900 mb-6">Send us a message</h3>
+        
+        <form id="contactForm" class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition">
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition">
+          </div>
+
+          <div>
+            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject *</label>
+            <input type="text" id="subject" name="subject" required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition">
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message *</label>
+            <textarea id="message" name="message" rows="4" required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-md shadow-md transition flex items-center justify-center">
+            <i class="fas fa-paper-plane mr-2"></i> Send Message
+          </button>
+        </form>
+
+        <div id="formMessage" class="hidden mt-4 p-4 rounded-md"></div>
       </div>
-      <div class="vision">
-        <h3><i class="fas fa-eye icon"></i> Our Vision</h3>
-        <p>
-          A just, healthy, and prosperous society where all youth are empowered to realize their full potential and contribute to sustainable development.
-        </p>
-      </div>
-    </div>
 
-    <!-- Core Values -->
-    <div class="core-section fade-in-delay">
-      <h3><i class="fas fa-star icon"></i> Our Core Values</h3>
-      <ul class="core-values">
-        <li><i class="fas fa-user-friends"></i> Youth-Centeredness</li>
-        <li><i class="fas fa-balance-scale"></i> Integrity & Accountability</li>
-        <li><i class="fas fa-globe-africa"></i> Inclusivity & Diversity</li>
-        <li><i class="fas fa-hands-helping"></i> Collaboration & Innovation</li>
-        <li><i class="fas fa-leaf"></i> Sustainability</li>
-      </ul>
-    </div>
+      <!-- Contact Info -->
+      <div class="bg-white p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold text-indigo-900 mb-6">Our Contact Details</h3>
+        
+        <div class="space-y-5">
+          <div class="flex items-start">
+            <div class="bg-orange-100 p-3 rounded-full mr-4">
+              <i class="fas fa-map-marker-alt text-orange-500 text-lg"></i>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-900">Our Address</h4>
+              <p class="text-gray-600">
+                Maseno University, Business Center<br>
+                4th Floor Door D4<br>
+                P.O. BOX – 40100, KISUMU
+              </p>
+            </div>
+          </div>
 
-    <!-- SDG Focus -->
-    <div class="sdgs slide-up">
-      <h3><i class="fas fa-globe icon"></i> SDG Focus</h3>
-      <p>
-        Our programs align with the UN Sustainable Development Goals:
-        <br><strong>SDG 3, 4, 5, 8, 10, 13, 16</strong>—ensuring youth thrive in health, education, work, equity, peace, and a green future.
-      </p>
-    </div>
+          <div class="flex items-start">
+            <div class="bg-orange-100 p-3 rounded-full mr-4">
+              <i class="fas fa-envelope text-orange-500 text-lg"></i>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-900">Email Us</h4>
+              <a href="mailto:info@hoperekindledinitiative.org" class="text-orange-500 hover:text-orange-600">
+                info@hoperekindledinitiative.org
+              </a>
+              <p class="text-sm text-gray-500 mt-1">Typically respond within 24 hours</p>
+            </div>
+          </div>
 
-    <!-- Approach -->
-    <div class="approach fade-in-delay">
-      <h3><i class="fas fa-lightbulb icon"></i> Our Strategic Approach</h3>
-      <ul>
-        <li>Youth-Led Programming</li>
-        <li>Community Engagement</li>
-        <li>Evidence-Based Interventions</li>
-        <li>Advocacy & Policy Influence</li>
-        <li>Multi-Sectoral Partnerships</li>
-      </ul>
-    </div>
+          <div class="flex items-start">
+            <div class="bg-orange-100 p-3 rounded-full mr-4">
+              <i class="fas fa-phone-alt text-orange-500 text-lg"></i>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-900">Call Us</h4>
+              <a href="tel:+254718568969" class="text-orange-500 hover:text-orange-600">
+                +254 718 568 969
+              </a>
+              <p class="text-sm text-gray-500 mt-1">Monday-Friday, 8AM-5PM EAT</p>
+            </div>
+          </div>
 
-    <!-- Team -->
-    <div class="team-section slide-up">
-      <h3><i class="fas fa-users icon"></i> Meet Our Team</h3>
-      <div class="team-grid">
-        <div class="team-member">
-          <div class="photo-placeholder">Photo</div>
-          <div class="member-info">
-            <h4>Hawah Maria</h4>
-            <p>Chief Visionary Officer</p>
-            <blockquote>“At HRI, I live my purpose—empowering youth and transforming communities.”</blockquote>
+          <div class="flex items-start">
+            <div class="bg-orange-100 p-3 rounded-full mr-4">
+              <i class="fab fa-whatsapp text-orange-500 text-lg"></i>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-900">WhatsApp</h4>
+              <a href="https://wa.me/254718568969" class="text-orange-500 hover:text-orange-600">
+                Chat with our team
+              </a>
+              <p class="text-sm text-gray-500 mt-1">Quick responses during business hours</p>
+            </div>
           </div>
         </div>
-        <div class="team-member">
-          <div class="photo-placeholder">Photo</div>
-          <div class="member-info">
-            <h4>Lamech Atula</h4>
-            <p>Pharmaceutical Technologist</p>
-            <blockquote>“HRI lets me give back meaningfully. We’re building futures together.”</blockquote>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="photo-placeholder">Photo</div>
-          <div class="member-info">
-            <h4>Sarah Nyawanda</h4>
-            <p>Sociologist</p>
-            <blockquote>“Whether you think you can or you think you can’t—you’re right.”</blockquote>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="photo-placeholder">Photo</div>
-          <div class="member-info">
-            <h4>Ali Griffin</h4>
-            <p>Youth Advocate</p>
-            <blockquote>“In every moment, I try to be the change I want to see.”</blockquote>
+
+        <div class="mt-8">
+          <h4 class="font-medium text-gray-900 mb-3">Find Us</h4>
+          <div class="w-full h-64 rounded-lg overflow-hidden shadow-md">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.755575669368!2d34.76827631526188!3d-0.01076923549945163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f9f1a7e5d3a5b%3A0x7c5d7f5b5a5d5a5d!2sMaseno%20University%20Business%20Center!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske"
+              width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy">
+            </iframe>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Board -->
-    <div class="board-section fade-in-delay">
-      <h3><i class="fas fa-briefcase icon"></i> Board of Directors</h3>
-      <ul class="board-list">
-        <li>Chairperson</li>
-        <li>Advisor – Programs and Impact</li>
-        <li>Advisor – Finance and Risk</li>
-        <li>Advisor – Legal and Governance</li>
-        <li>Advisor – Communications & Advocacy</li>
-        <li>Secretary</li>
-        <li>Youth Representative</li>
-      </ul>
     </div>
   </div>
 </section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const formMessage = document.getElementById('formMessage');
+  
+  // Change button to loading state
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
+
+  // Using Formspree.io for form submission
+  fetch('https://formspree.io/f/meozqvwk', {
+    method: 'POST',
+    body: new FormData(form),
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      formMessage.className = 'bg-green-100 text-green-700 mt-4 p-4 rounded-md';
+      formMessage.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Message sent successfully! We will respond soon.';
+      form.reset();
+    } else {
+      throw new Error('Failed to send message');
+    }
+  })
+  .catch(error => {
+    formMessage.className = 'bg-red-100 text-red-700 mt-4 p-4 rounded-md';
+    formMessage.innerHTML = '<i class="fas fa-exclamation-circle mr-2"></i> There was an error sending your message. Please try again.';
+    console.error('Error:', error);
+  })
+  .finally(() => {
+    formMessage.classList.remove('hidden');
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i> Send Message';
+    
+    // Hide message after 5 seconds
+    setTimeout(() => {
+      formMessage.classList.add('hidden');
+    }, 5000);
+  });
+});
+</script>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Contact Section CSS -->
+
 
     <!-- Footer -->
     <footer>
@@ -840,7 +535,7 @@ blockquote {
             </div>
         </div>
         <div class="copyright">
-<p>&copy; <span id="year"></span> Hope Rekindled Initiative. All rights reserved.</p>
+            &copy; 2025 Hope Rekindled Initiative. All rights reserved.
         </div>
     </footer>
 
@@ -869,7 +564,6 @@ blockquote {
                 document.body.style.overflow = '';
             });
         });
-                document.getElementById('year').textContent = new Date().getFullYear();
 
         // Header scroll effect
         window.addEventListener('scroll', function() {
